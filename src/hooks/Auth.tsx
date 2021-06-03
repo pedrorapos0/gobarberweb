@@ -74,7 +74,7 @@ export const AuthProvider: React.FC = ({ children }) => {
       });
       localStorage.setItem('@Gobarber:user', JSON.stringify(user));
     },
-    [data.token],
+    [setData, data.token],
   );
 
   return (
